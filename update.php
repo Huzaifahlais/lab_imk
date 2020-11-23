@@ -115,3 +115,6 @@ function tampilkan(){
 </body>
  <br /><br/>
 </html>
+<?php
+include 'footer.php';
+?>
