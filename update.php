@@ -62,6 +62,10 @@ function tampilkan(){
 	$data = mysqli_query($koneksi,"SELECT *FROM perpus WHERE nim = '$nim'");
 	WHILE($d = mysqli_fetch_array($data)){
 	 ?>
+		<div class="alert alert-success alert-dismissible fade show">
+  <div class="row vertical-align">
+        
+  </div>
 		 <form method="post" id="insert_form" name="insert_form" action="update_aksi.php">
 	 <div class="form-group">
 	 	<label class="col-sm-4 control-label">NIM <small id="small"> *</small></label>
