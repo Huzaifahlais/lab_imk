@@ -106,6 +106,13 @@ function tampilkan(){
 			<input class="btn btn-success" type="submit" value="SIMPAN" onclick="return confirm('Periksa kembali data anda dan Klik OK jika data sudah benar')">  <a href="index.php" class="btn btn-secondary">KEMBALI</a>
 	</form>
 </center>
+</form>
+</div>
+</div>
+</div>
 </body>
  <br /><br/>
 </html>
+<?php
+include 'footer.php';
+?>
