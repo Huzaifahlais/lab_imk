@@ -107,7 +107,7 @@ function tampilkan(){
 <br/><br/>
 	 <button type="submit" class="btn btn-success" onclick="return confirm('Periksa kembali data anda dan Klik OK jika data sudah benar')">Edit</button>
 	 </form>
-
+	</div>
 	</div>
 	<?php
 	}
