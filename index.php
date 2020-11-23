@@ -18,16 +18,6 @@
   border: 2px solid grey;
   padding: 20px; 
   width: 200px;}
-
-  .footer{
-    width: 100%;
-    height: 50px;
-    padding-left: 10px;
-    line-height: 50px;
-    background: #333;
-    color: #fff;
-    position: absolute;
-    bottom: 0px;
 }
  
   	
