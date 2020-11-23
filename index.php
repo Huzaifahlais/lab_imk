@@ -2,12 +2,17 @@
 <html>
 <head>
 <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/752056054c.js" crossorigin="anonymous"></script>
+<script>$(document).ready(function(){$('[data-toggle="tooltip"]').tooltip();});</script>
   <style>
+	  tr{
+    text-align: center;
+  }
   	#corner{
   		  border-radius: 25px;
   border: 2px solid grey;
@@ -65,10 +70,10 @@ while($d = mysqli_fetch_array($data)){
 	<td><?php echo $d['nim'];?></td>
 	<td><?php echo $d['nama'];?></td>
 	<td>
-		<a href="detail.php?nim=<?php echo $d['nim'];?>" class="btn btn-info btn-xs" role="button">LIHAT</a>
-		<a href="update.php?nim=<?php echo $d['nim'];?>" class="btn btn-success btn-xs"role="button">EDIT</a>
-	    <a href="delete.php?nim=<?php echo $d['nim'];?>" class="btn btn-danger btn-xs"role="button"  onclick="return confirm('Apakah anda yakin ingin menghapus item ini ?')">HAPUS</a>
-	</td>
+	<a href="detail.php?nim=<?php echo $d['nim'];?>" class="btn btn-info" role="button" data-toggle="tooltip" data-placement="bottom" title="LIHAT"><span class='fas fa-eye'></span></a>
+	<a href="update.php?nim=<?php echo $d['nim'];?>" class="btn btn-success" data-toggle="tooltip" data-placement="bottom" title="EDIT"><span class="fas fa-pencil-alt"></span></a>
+	<a href="delete.php?nim=<?php echo $d['nim'];?>" class="btn btn-danger" data-toggle="tooltip" data-placement="bottom" title="HAPUS"; onclick="return confirm('Apakah anda yakin ingin menghapus item ini?')"><span class="fas fa-trash"></span></a>
+  </td>
 </tr>
 
 
