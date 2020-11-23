@@ -8,7 +8,25 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-      
+     <script> 
+function tampilkan(){
+  var nama_fak=document.getElementById("insert_form").fakultas.value;
+  if (nama_fak=="Fakultas Kedokteran")
+    {
+        document.getElementById("prodi").innerHTML="<option value='Program Studi Belum Terpilih' readonly>Pilih Program Studi</option><option value='S1-Pendidikan Dokter'>S1-Pendidikan Dokter</option>";
+    }
+  else if (nama_fak=="Fakultas Ilmu Budaya")
+    {
+        document.getElementById("prodi").innerHTML=
+        " <option value='Program Studi Belum Terpilih' readonly>Pilih Program Studi</option><option value='S1-Satra Indonesia'>S1-Satra Indonesia</option><option value='S1-Satra Melayu'>S1-Satra Melayu</option><option value='S1-Satra Batak'>S1-Satra Batak</option><option value='S1-Satra Arab'>S1-Satra Arab</option><option value='inggris'>S1-Satra Inggris</option><option value='jepang'>S1-Satra Jepang</option><option value='S1-Sastra Cina'>S1-Sastra Cina</option><option value='S1-Ilmu Perpustakaan'>S1-Ilmu Perpustakaan</option><option value='S1-Ilmu Sejarah'>S1-Ilmu Sejarah</option><option value='S1-Etnomusikologi'>S1-Etnomusikologi</option>";
+    }
+
+      else if (nama_fak=="Fakultas Ilmu Komputer dan Teknologi Informasi")
+    {
+        document.getElementById("prodi").innerHTML="<option value='Program Studi Belum Terpilih' readonly>Pilih Program Studi</option><option value='S1-Ilmu Komputer'>S1-Ilmu Komputer</option><option value='S1-Teknologi Informasi'>S1-Teknologi Informasi</option>";
+    }
+}
+	</script>
  <style>
   	#corner{
   		  border-radius: 25px;
@@ -40,6 +58,8 @@
    <br />  
    <div class="table-responsive">
     <div align="left">
+
+<form method="post" id="insert_form" name="insert_form" action="input_aksi.php">
 		<table>
      <label>NIM<small id="small"> *</small></label>
      <input type="text" name="nim" id="nim" minlength="9" maxlength="9" class="form-control" required />
