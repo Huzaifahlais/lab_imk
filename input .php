@@ -54,7 +54,12 @@ function tampilkan(){
 	<br /> <br/>
 	<div class="container" id="corner" style="width:700px;"> 
    <h4 align="center">Tambah Data </h4>  
-   	
+   <div class="alert alert-success alert-dismissible fade show">
+  <div class="row vertical-align">
+        <div class="col-sm-11">
+      <center><strong>Perhatian!</strong> Harap hat-hati untuk mengisi form.</center>
+    </div>
+  </div>
    <br />  
    <div class="table-responsive">
     <div align="left">
