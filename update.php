@@ -90,7 +90,7 @@ function tampilkan(){
 	 </div>
 	  <label>Fakultas:<small id="small"> *</small></label>
   <br/>
-  <select id="fakultas" name="fakultas" >
+  <select id="fakultas" name="fakultas" onchange="tampilkan() >
   	<option value="Pilih Fakultas" readonly>Pilih Fakultas</option>
     <option value="Fakultas Kedokteran">Fakultas Kedokteran</option>
     <option value="Fakultas Ilmu Budaya">Fakultas Ilmu Budaya</option> 
