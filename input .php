@@ -43,7 +43,7 @@ function tampilkan(){
 </head>
 <div class="container">
   <div class="jumbotron">
-    <h1>Perpustakaan Universitas Sumatera<img src="./usu.png" width="100px" align="right" />  </h1>
+    <h1>Perpustakaan Universitas Sumatera Utara<img src="./usu.png" width="100px" align="right" />  </h1>
     <p>Menampilkan Anggota Perpustakaan dengan CRUD</p>
    
     </div>
