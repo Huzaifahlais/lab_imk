@@ -69,7 +69,7 @@ function tampilkan(){
 		 <form method="post" id="insert_form" name="insert_form" action="update_aksi.php">
 	 <div class="form-group">
 	 	<label class="col-sm-4 control-label">NIM <small id="small"> *</small></label>
-	 	<input class="form-control" type="text" name="nim" value="<?php echo $d['nim']; ?>" minlength="9" maxlength="9"required>
+	 	<input class="form-control" type="text" name="nim" value="<?php echo $d['nim']; ?>" minlength="9" maxlength="9"required readonly>
 	 </div>
 	 <div class="form-group">
 	 	<label class="col-sm-4 control-label">Nama<small id="small"> *</small></label>
