@@ -85,5 +85,10 @@ while($d = mysqli_fetch_array($data)){
 </table>
 </center>
 </body>
+</div>
+</div>
+<?php
+include 'footer.php';
+?>
 </html>
- <br /><br/>
+<br><br>
