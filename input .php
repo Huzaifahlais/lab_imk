@@ -39,7 +39,7 @@ function tampilkan(){
  
   	}
   </style>
-	<title>Homepage</title>
+
 </head>
 <div class="container">
   <div class="jumbotron">
@@ -50,7 +50,6 @@ function tampilkan(){
   
   </div>
     
-</div>
 	<br /> <br/>
 	<div class="container" id="corner" style="width:700px;"> 
    <h4 align="center">Tambah Data </h4>  
