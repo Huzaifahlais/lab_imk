@@ -1,0 +1,17 @@
+  .column{
+  	float: left;
+  padding: 10px; }
+
+ .column.side {
+  width: 25%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;}
+  
+  .footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
